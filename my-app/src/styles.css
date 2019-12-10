@@ -3,10 +3,14 @@
 h1 {
     color: brown;
     font-family: Helvetica, Arial, sans-serif;
-    background-color: white;
     font-size: 200%;
     text-align: center;
     text-transform: uppercase;
+}
+
+h2 {
+    font-family: Helvetica;
+    color: brown;
 }
 
 ul {
@@ -15,9 +19,6 @@ ul {
     font-weight: bold;
     background-color: brown;
     color: white;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     
 }
@@ -30,4 +31,24 @@ ul li {
     display: inline;
     padding-left: 5%;
     padding-right: 5%;
+}
+/* Eddig tart a menüsor*/
+body {
+    background:  	#A8A8A8;
+}
+div {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    color: white;
+    font-family: Helvetica;
+    font-size: 100%;
+    text-align: left;
+    /*width: 1200px;*/
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    
 }

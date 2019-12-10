@@ -1,25 +1,3 @@
-p {
-    
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 100%;
-    text-align: left;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    
-}
-
-.firstp {
-    color: white;
-    background-color: grey;
-}
-
-.secondp {
-    color: grey;
-    background-color: white;
-}
-
 .pic {
     max-width: 1200px;
     display: block;
@@ -30,9 +8,9 @@ p {
 button {
     margin-top: 50px;
     text-align: center;
-    border: 2px solid black;
-    font-size: 200%;
-    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 150%;
+    border-radius: 2px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
