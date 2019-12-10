@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+/* Ezek a menüsor stíluselemei*/
+h1 {
+    color: brown;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: white;
+    font-size: 200%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    font-family: Helvetica;
+    font-weight: bold;
+    background-color: brown;
+    color: white;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li {
+    display: inline;
+    padding-left: 5%;
+    padding-right: 5%;
+}
