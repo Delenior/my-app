@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class KapcsolatService {
 infok = [
     "Email: user@test.hu",
-    "Telefonszám: +36101234567",
+    "Telefonszám: +36 01 2345678",
     "Cím: 7625 Pécs, Majorossy Imre u. 36."
   ]
   getKapcsolat() {
