@@ -3,7 +3,7 @@
 h1 {
     color: brown;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 200%;
+    /*font-size: 200%;*/
     text-align: center;
     text-transform: uppercase;
 }
@@ -17,7 +17,7 @@ ul {
     list-style: none;
     font-family: Helvetica;
     font-weight: bold;
-     background-color: brown;
+    background-color: brown;
     color: white;
     text-align: center;
     
@@ -51,4 +51,10 @@ p {
     margin-right: auto;
     border-radius: 5px;
     
+}
+
+.footer
+{
+        font-weight: lighter;
+        font-size: 9px;
 }

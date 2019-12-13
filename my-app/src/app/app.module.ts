@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { RolunkComponent } from './rolunk/rolunk.component';
 import { FooldalComponent } from './fooldal/fooldal.component';
 import { KapcsolatComponent } from './kapcsolat/kapcsolat.component';
+import { HeaderListComponent } from './header-list/header-list.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RolunkComponent,
     FooldalComponent,
-    KapcsolatComponent
+    KapcsolatComponent,
+    HeaderListComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
