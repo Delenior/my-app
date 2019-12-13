@@ -20,9 +20,7 @@
             Elérhetőségek:
         </h2>
         <ul class="lista">
-            <li class="pog">Email: user@test.hu</li>
-            <li>Telefonszám: +36101234567</li>
-            <li>Cím: 7625 Pécs, Majorossy Imre u. 36.</li>
+            <li *ngFor="let info of infok">{{ info }}</li>
         </ul>
     </div>
     <div>
