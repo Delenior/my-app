@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {RolunkComponent} from './rolunk/rolunk.component';
-import { AppComponent } from './app.component';
 import { FooldalComponent } from './fooldal/fooldal.component';
 import { KapcsolatComponent } from './kapcsolat/kapcsolat.component';
 

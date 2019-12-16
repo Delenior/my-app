@@ -8,6 +8,8 @@ import { FooldalComponent } from './fooldal/fooldal.component';
 import { KapcsolatComponent } from './kapcsolat/kapcsolat.component';
 import { HeaderListComponent } from './header-list/header-list.component';
 import { FooterComponent } from './footer/footer.component';
+import { KapcsolatService } from './kapcsolat.service';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -20,9 +22,12 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    KapcsolatService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
