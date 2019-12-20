@@ -15,6 +15,8 @@ import {DropdownModule} from 'primeng/dropdown';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CheckboxModule} from 'primeng/checkbox';
 import {RadioButton} from 'primeng/radiobutton';
+import {ButtonModule} from 'primeng/button';
+import { Button } from 'protractor';
 
 
 @NgModule({
@@ -28,6 +30,7 @@ import {RadioButton} from 'primeng/radiobutton';
     PrimengFormComponent,
     RadioButton,
     
+    
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import {RadioButton} from 'primeng/radiobutton';
     DropdownModule,
     BrowserAnimationsModule,
     CheckboxModule,
+    ButtonModule,
   ],
   providers: [
     KapcsolatService
