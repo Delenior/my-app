@@ -1,3 +1,6 @@
+@import '../node_modules/primeng/resources/themes/nova-colored/theme.css';
+@import '../node_modules/primeicons/primeicons.css';
+@import '../node_modules/primeng/resources/primeng.min.css';
 /* You can add global styles to this file, and also import other style files */
 /* Ezek a menüsor stíluselemei*/
 h1 {
@@ -13,25 +16,6 @@ h2 {
     color: brown;
 }
 
-ul {
-    list-style: none;
-    font-family: Helvetica;
-    font-weight: bold;
-    background-color: brown;
-    color: white;
-    text-align: center;
-    
-}
-a {
-    color: white;
-    text-decoration: none;
-}
-
-ul li {
-    display: inline;
-    padding-left: 5%;
-    padding-right: 5%;
-}
 /* Eddig tart a menüsor*/
 body {
     background:  	#A8A8A8;
@@ -57,4 +41,8 @@ p {
 {
         font-weight: lighter;
         font-size: 9px;
+}
+
+.form-control.ng-touched.ng-invalid {
+    border: 2px solid red;
 }

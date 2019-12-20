@@ -28,21 +28,25 @@
             <div class="form-group">
                 <label for="userEmail">Email:</label> <!--Ez a for beállítja a focust a beviteli mezőre-->
                 <br>
-                <input required ngModel name="userEmail" #userEmail="ngModel" (change)="log(userEmail)" id="userEmail" type="text" class="from-control">
-                <div class="alert-danger" *ngIf="userEmail.touched && !userEmail.valid">Az e-mail címet kötelező megadni!</div>
+                <input required minlength="3" pattern="123" ngModel name="userEmail" #userEmail="ngModel" (change)="saveEmail(userEmail.value)" id="userEmail" type="text" class="from-control">
+                <div class="alert alert-danger" *ngIf="userEmail.touched && !userEmail.valid">
+                    <div *ngIf="userEmail.errors.required">Az e-mail címet kötelező megadni!</div>
+                    <div *ngIf="userEmail.errors.minlength">Az email cím biztosan több, mint {{userEmail.errors.minlength.requiredLength}} karakter!</div>
+                    <div *ngIf="userEmail.errors.pattern">Az e-mail cím nem egyezik meg a mintával</div>
+                </div>
             </div>
             <div class="form-group">
                 <label for="userName">Név:</label> <!--Ez a for beállítja a focust a beviteli mezőre-->
                 <br>
-                <input required ngModel name="userName" #userName="ngModel" (change)="log(userName)" id="userName" type="text" class="from-control">
-                <div class="alert alert-danger" *ngIf="userName.touched && !userName.valid">A nevet címet kötelező megadni!</div>
+                <input required ngModel name="userName" #userName="ngModel" (change)="saveName(userName.value)" id="userName" type="text" class="from-control">
+                <div class="alert alert-danger" *ngIf="userName.touched && !userName.valid">A nevet kötelező megadni!</div>
             </div>
             <div class="form-group">
                 <label for="userTextMsg">Üzenet:</label>
                 <br>
-                <textarea id="userTextMsg" cols="30" rows="10" class="form-control"></textarea>
+                <textarea ngModel id="userTextMsg" name="userTextMsg" #userTextMsg="ngModel" cols="30" rows="10" class="form-control" (change)="saveMsg(userTextMsg.value)"></textarea>
             </div>
-            <button class="btn btn-primary">Küldés</button>
+            <button class="btn btn-primary" (click)="sendMessage()"  >Küldés</button>
         </form>
     </div>
 </body>

@@ -1,0 +1,14 @@
+<h1>Ez a primeng tesztelő oldal</h1> <br>
+<div>
+<h2>Ez egy dropdown list</h2>
+<p-dropdown 
+    [options]="cities" 
+    placeholder="Válaszd ki a várost!" 
+    optionLabel="name" 
+    [(ngModel)]="selectedCity"
+    dataKey="name"
+    >
+</p-dropdown>
+<button (click)="getSelectedCity()">Submit</button>
+</div>
+

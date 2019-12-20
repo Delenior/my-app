@@ -1,0 +1,19 @@
+ul {
+    list-style: none;
+    font-family: Helvetica;
+    font-weight: bold;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li {
+    display: inline;
+    padding-left: 5%;
+    padding-right: 5%;
+}

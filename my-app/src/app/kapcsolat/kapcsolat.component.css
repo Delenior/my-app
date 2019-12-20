@@ -14,9 +14,14 @@
 button {
     border: 1px solid black;
     font-family: Helvetica;
-    color: brown;
+    color: white;
+    background-color: brown;
     font-weight: bold;
     border-radius: 2px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
+}
+
+.form-control.ng-touched.ng-invalid {
+    border: 2px solid red;
 }

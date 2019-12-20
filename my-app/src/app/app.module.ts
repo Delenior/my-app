@@ -9,7 +9,13 @@ import { KapcsolatComponent } from './kapcsolat/kapcsolat.component';
 import { HeaderListComponent } from './header-list/header-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { KapcsolatService } from './kapcsolat.service';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { PrimengFormComponent } from './primeng-form/primeng-form.component'
+import {DropdownModule} from 'primeng/dropdown';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CheckboxModule} from 'primeng/checkbox';
+import {RadioButton} from 'primeng/radiobutton';
+
 
 @NgModule({
   declarations: [
@@ -18,12 +24,18 @@ import { FormsModule } from '@angular/forms'
     FooldalComponent,
     KapcsolatComponent,
     HeaderListComponent,
-    FooterComponent
+    FooterComponent,
+    PrimengFormComponent,
+    RadioButton,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    DropdownModule,
+    BrowserAnimationsModule,
+    CheckboxModule,
   ],
   providers: [
     KapcsolatService

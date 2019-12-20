@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {RolunkComponent} from './rolunk/rolunk.component';
 import { FooldalComponent } from './fooldal/fooldal.component';
 import { KapcsolatComponent } from './kapcsolat/kapcsolat.component';
+import { PrimengFormComponent } from './primeng-form/primeng-form.component';
 
 
 const routes: Routes = [
@@ -10,7 +11,8 @@ const routes: Routes = [
   { path: 'rolunk', component: RolunkComponent  },
   { path: 'fooldal', component: FooldalComponent},
   { path: '', redirectTo: '/fooldal', pathMatch: 'full'},
-  { path: 'kapcsolat', component: KapcsolatComponent}
+  { path: 'kapcsolat', component: KapcsolatComponent},
+  { path: 'primengForm', component: PrimengFormComponent  }
 ];
 
 @NgModule({

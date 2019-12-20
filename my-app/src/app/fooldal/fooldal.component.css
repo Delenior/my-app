@@ -15,8 +15,10 @@ button {
 }
 
 .sub {
+    text-decoration: none;
     background: brown;
     color: white;
+    
 }
 
 .can {

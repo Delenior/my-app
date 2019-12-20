@@ -13,18 +13,31 @@ export class KapcsolatComponent implements OnInit {
   userEmail: string = "default";
   userName: string = "default";
   userTextMsg: string = "default";
+  
 
   constructor(service: KapcsolatService) { 
     this.infok = service.getKapcsolat(); //így már a service segít az infok megszerzésében
   }
 
-  sendMessage() {
-    const usrEmail = this.userEmail;
-    const usrName = this.userName;
-    const txtMsg = this.userTextMsg;
-    console.log("User's email: "+usrEmail+"\nUser's name: "+usrName+"\nText message: "+txtMsg);
+  sendMessage()
+  {
+    console.log(this.userEmail+" "+this.userName+" "+this.userTextMsg);
   }
-  log(x) { console.log(x); }
+  log(x) { console.log(x); 
+  }
+
+  saveEmail(x)
+  {
+    this.userEmail = x;
+  }
+  saveName(x)
+  {
+    this.userName = x;
+  }
+  saveMsg(x)
+  {
+    this.userTextMsg = x;
+  }
 
   ngOnInit() {
   }
