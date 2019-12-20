@@ -12,7 +12,11 @@ interface City {
 export class PrimengFormComponent implements OnInit {
 
   selectedCity: City;
-
+  userPW: string;
+  userNM: string;
+  regNM: string;
+  regPW: string;
+  regPW2: string;
   
 
   constructor() {
@@ -30,6 +34,18 @@ export class PrimengFormComponent implements OnInit {
 
   public getSelectedCity() {
     console.log(this.selectedCity);
+  }
+
+  authData() {
+    console.log("Username: "+this.userNM+" Password: "+this.userPW);
+  }
+
+  registration() {
+    if(this.regPW == this.regPW2 && this.regPW!= null)
+    {
+      console.log("Sikeres regisztráció!");
+    }
+    else console.log("Nem egyezik a két jelszó!");
   }
 
 }

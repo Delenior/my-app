@@ -17,6 +17,7 @@ import {CheckboxModule} from 'primeng/checkbox';
 import {RadioButton} from 'primeng/radiobutton';
 import {ButtonModule} from 'primeng/button';
 import { Button } from 'protractor';
+import { PasswordModule } from 'primeng/password';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { Button } from 'protractor';
     BrowserAnimationsModule,
     CheckboxModule,
     ButtonModule,
+    PasswordModule,
   ],
   providers: [
     KapcsolatService

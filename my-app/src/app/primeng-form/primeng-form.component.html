@@ -11,4 +11,43 @@
     <br>
     <br>
     <button pButton type="button" class="ui-button-raised ui-button-rounded" label="Submit" (click)="getSelectedCity()"></button>
+    <br>
+    <br>
+    <h2>Login form</h2>
+    <div class="ui-inputgroup">
+        <span class="ui-inputgroup-addon"><i class="pi pi-user" style="line-height: 1.25;"></i></span>
+        <input required maxlength="10" type="text" pInputText placeholder="Username" [(ngModel)]="userNM">         
+    </div>
+    <br>
+    <div class="ui-inputgroup">
+        <span class="ui-inputgroup-addon"><i class="pi pi-lock" style="line-height: 1.25;"></i></span>
+        <input required maxlength="10" type="password" pInputText placeholder="Password" [(ngModel)]="userPW">         
+    </div>
+    <br>
+    <div>
+        <button pButton type="button" class="ui-button-raised ui-button-rounded" label="Login" (click)="authData();"></button>
+    </div>
+    <h2>Registration form</h2>
+    <div>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-user" style="line-height: 1.25;"></i></span>
+            <input required maxlength="10" type="text" pInputText placeholder="Username" [(ngModel)]="regNM">         
+        </div>
+        <br>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-lock" style="line-height: 1.25;"></i></span>
+            <input required maxlength="10" type="password" pInputText placeholder="Password" [(ngModel)]="regPW">         
+        </div>
+        <br>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-lock" style="line-height: 1.25;"></i></span>
+            <input required maxlength="10" type="password" pInputText placeholder="Password again" [(ngModel)]="regPW2">         
+        </div>
+        <br>
+    <div>
+        <button pButton type="button" class="ui-button-raised ui-button-rounded" label="Register" (click)="registration();"></button>
+    </div>
+    </div>
+
+    
 </div>
