@@ -1,19 +1,19 @@
 @import '../node_modules/primeng/resources/themes/nova-colored/theme.css';
 @import '../node_modules/primeicons/primeicons.css';
 @import '../node_modules/primeng/resources/primeng.min.css';
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files*/
 /* Ezek a menüsor stíluselemei*/
 h1 {
-    color: brown;
-    font-family: Helvetica, Arial, sans-serif;
-    /*font-size: 200%;*/
-    text-align: center;
-    text-transform: uppercase;
+  color: brown;
+  font-family: Helvetica, Arial, sans-serif;
+  /*font-size: 200%;*/
+  text-align: center;
+  text-transform: uppercase;
 }
 
 h2 {
-    font-family: Helvetica;
-    color: brown;
+  font-family: Helvetica;
+  color: brown;
 }
 
 /* Eddig tart a menüsor*/
@@ -34,7 +34,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
-    
+
 }
 
 .footer

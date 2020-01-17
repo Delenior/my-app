@@ -25,3 +25,35 @@ button {
 .form-control.ng-touched.ng-invalid {
     border: 2px solid red;
 }
+
+ul {
+  list-style: none;
+  font-family: Helvetica;
+  font-weight: bold;
+  background-color: brown;
+  color: white;
+  text-align: center;
+
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li {
+  display: inline;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+h1 {
+  color: brown;
+  font-family: Helvetica, Arial, sans-serif;
+  /*font-size: 200%;*/
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: Helvetica;
+  color: brown;
+}
